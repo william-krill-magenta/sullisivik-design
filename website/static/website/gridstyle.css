@@ -1,0 +1,176 @@
+body {
+    display: grid;
+    grid-template-rows: 80px 580px 580px 580px 100px;
+    font: 16pt/24pt Arial, serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/* Style the header with a grey background and some padding */
+header, .main, footer {
+    background-color: #63389B;
+    color: white;
+
+    margin: 0;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); virker ikke */
+}
+
+header, .main, .used, .municipality, footer {
+}
+
+header {
+    border-bottom: 1px solid black;
+}
+
+
+.container_12x1 {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    width: 70%;
+    margin: auto;
+   }
+
+.used {
+    background-color: #EAECEE;
+    padding: 20px 50px;
+    border: 0;
+    margin: 0;
+}
+
+.municipality {
+    padding: 20px 50px;
+    border: 0;
+    margin: 0;
+}
+
+
+
+
+a {
+    font: 16pt/24pt Arial, serif;
+}
+
+/*
+a:link {
+    color: #31495B
+}
+*/
+
+/*
+a:visited {
+    color: #31495B
+}
+*/
+
+a:hover {
+    color: #83929D;
+}
+
+p {
+    font: 16pt/24pt Arial, serif;
+    color: #31495B
+}
+
+h1 {
+    font: bold 24pt/30pt Arial, serif;
+}
+
+h2 {
+    font: bold 16pt/24pt Arial, serif;
+}
+
+
+/* Style the header links */
+header a, .main a, footer a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+header a.logo {
+    grid-column: 1 / span 3;
+    font-size: 25px;
+    font-weight: bold;
+    outline: 0;
+}
+
+header a.contact {
+    grid-column: 10 / span 1;
+}
+
+/* Change the background color on mouse-over
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+*/
+
+/* Style the active/current link*/
+header a.active {
+    grid-column: 4 /span 2;
+    background-color: #42205D;
+    color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+    float: right;
+}
+
+
+
+
+
+
+
+
+.box {
+    background-color: beige;
+    color: black;
+    border-radius: 5px;
+    border: 2px dodgerblue solid;
+}
+
+.a {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column:  1 / span 2;
+}
+
+.b {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column:  3 / span 2;
+}
+
+.c {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column:  5 / span 2;
+}
+
+.d {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column:  7 / span 2;
+}
+
+.e {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column:  9 / span 2;
+}
+
+.f {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column:  11 / span 2;
+}
