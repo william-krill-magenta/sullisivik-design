@@ -18,18 +18,20 @@ header, .main, footer {
 }
 
 header, .main, .used, .municipality, footer {
+    display: grid;
 }
 
 header {
     border-bottom: 1px solid black;
 }
 
-
 .container_12x1 {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr;
     width: 70%;
     margin: auto;
+    align-content: center;
    }
 
 .used {
