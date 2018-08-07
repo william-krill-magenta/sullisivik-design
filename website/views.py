@@ -7,3 +7,6 @@ def index(request):
 
 def gridindex(request):
     return render(request, 'website/gridsite.html')
+
+def copypaste(request):
+    return render(request, 'website/copypaste.html')
