@@ -14806,7 +14806,7 @@
                         t('<ul class="waiting-time__legend"><li><span class="waiting-time__icon waiting-time__icon--green"></span> <span class="waiting-time__label">' + r.LowRiskLabel + '</span></li><li><span class="waiting-time__icon waiting-time__icon--yellow"></span> <span class="waiting-time__label">' + r.MediumRiskLabel + '</span></li><li><span class="waiting-time__icon waiting-time__icon--red"></span> <span class="waiting-time__label">' + r.HighRiskLabel + "</span></li></ul>").appendTo(a);
                         var l = s.closest(".panel--highlight").find(".waiting-time");
                         l.empty().append(a), t.each(r.Days, function(i, n) {
-                            var s = t('<li><div class="waiting-time__clock"><div class="waiting-time__day">' + n.Name + '</div><div class="waiting-time__figure"><div class="waiting-time__gfx"></div><img src="/build/images/waitingtime/waiting-time-disc.png" alt="" class="waiting-time__disc" /></div></div></li>').appendTo(o),
+                            var s = t('<li><div class="waiting-time__clock"><div class="waiting-time__day">' + n.Name + '</div><div class="waiting-time__figure"><div class="waiting-time__gfx"></div><img src="/website/static/build/images/waitingtime/waiting-time-disc.png" alt="" class="waiting-time__disc" /></div></div></li>').appendTo(o),
                                 a = s.children();
                             if (n.HasWaitingTimeBlock) {
                                 var l, h, u, c, d, p = a.find(".waiting-time__gfx"),
@@ -14838,7 +14838,7 @@
                                     var b, _ = r.CurrentTime;
                                     _ = _ > 720 ? _ - 720 : _, b = _ / 720 * 360 - 90, b = b * Math.PI / 180, object = g.circle(l, l, h + 8), object.attr("stroke", "#4D4D4D"), object.attr("stroke-width", 2), object = g.path("M" + l + "," + l + "L" + (l + (h + 8) * Math.cos(b)) + "," + (l + (h + 8) * Math.sin(b))), object.attr("stroke", "#4d4d4d"), object.attr("stroke-width", 2), object = g.circle(l, l, 3), object.attr("fill", "#ffffff"), object.attr("stroke", "#4d4d4d"), object.attr("stroke-width", 2)
                                 }
-                            } else a.addClass("waiting-time__clock--closed"), a.find(".waiting-time__figure").html('<img src="/build/images/waitingtime/waiting-time-closed.png" alt="" class="waiting-time__closed" /><span>' + r.ClosedLabel + "</span>")
+                            } else a.addClass("waiting-time__clock--closed"), a.find(".waiting-time__figure").html('<img src="/website/static/build/images/waitingtime/waiting-time-closed.png" alt="" class="waiting-time__closed" /><span>' + r.ClosedLabel + "</span>")
                         })
                     };
                 t(document).on("change", "[data-selectmultiple]", function(e) {

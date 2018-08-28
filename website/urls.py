@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     url(r'^grid$', views.gridindex),
-    url(r'^copypaste$', views.copypaste),
+    url(r'^copypaste$', views.copypaste)
 ]
 

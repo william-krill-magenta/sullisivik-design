@@ -4733,7 +4733,7 @@ select {
  -webkit-appearance:none !important;
  -webkit-border-radius:0px;
  background-color:#fff;
- background-image:url("/build/images/pil_ned.svg");
+ background-image:url("https://www.sullissivik.gl/build/images/pil_ned.svg");
  background-position:100% center;
  background-repeat:no-repeat;
  border-style:solid;
@@ -5947,7 +5947,7 @@ select {
  top:-.3125rem;
  width:2rem;
  height:1.375rem;
- border:1px solid none;
+ border:1px solid transparent; /* Changed from none*/
  cursor:pointer;
  -ms-touch-action:manipulation;
  touch-action:manipulation;
@@ -10553,7 +10553,7 @@ select {
  -webkit-appearance:none !important;
  -webkit-border-radius:0px;
  background-color:#fff;
- background-image:url("/build/images/pil_ned.svg");
+ background-image:url("https://www.sullissivik.gl/build/images/pil_ned.svg");
  background-position:100% center;
  background-repeat:no-repeat;
  border-style:solid;
@@ -10799,7 +10799,7 @@ meta.foundation-mq-topbar {
  width:16px
 }
 .top-bar .toggle-topbar.menu-icon a span:hover:after {
- box-shadow:0 0px 0 1px "",0 7px 0 1px "",0 14px 0 1px ""
+ box-shadow:0 0px 0 1px, 0 7px 0 1px, 0 14px 0 1px
 }
 .top-bar.expanded {
  height:auto;
@@ -12398,13 +12398,13 @@ body {
 }
 @font-face {
  font-family:'KAN';
- src:url("/build/fonts/KAN.eot?-tbkyo3");
- src:url("/build/fonts/KAN.eot?#iefix-tbkyo3") format("embedded-opentype"),url("/build/fonts/KAN.woff?-tbkyo3") format("woff"),url("/build/fonts/KAN.ttf?-tbkyo3") format("truetype"),url("/build/fonts/KAN.svg?-tbkyo3#KAN") format("svg");
+ src:url("../build/fonts/KAN.eot?-tbkyo3");
+ src:url("../build/fonts/KAN.eot?#iefix-tbkyo3") format("embedded-opentype"),url("../build/fonts/KAN.woff?-tbkyo3") format("woff"),url("../build/fonts/KAN.ttf?-tbkyo3") format("truetype"),url("../build/fonts/KAN.svg?-tbkyo3#KAN") format("svg");
  font-weight:normal;
  font-style:normal
 }
 [class^="icon-"],[class*=" icon-"] {
- font-family:'KAN';
+ font-family:'KAN', serif; /* serif fallback added */
  speak:none;
  font-style:normal;
  font-weight:normal;
@@ -12645,7 +12645,7 @@ body {
 }
 .accordion__link:after {
  transition:200ms transform ease-in-out;
- content:url("/build/images/pil_ned.svg");
+ content:url("https://www.sullissivik.gl//build/images/pil_ned.svg");
  width:20px;
  height:30px;
  display:inline-block;
@@ -13905,7 +13905,7 @@ table td.right [class*="column"]+[class*="column"]:last-child {
  font-size:1.125rem
 }
 .search-box .searchfield:after {
- content:url("/build/images/search-small.svg");
+ content:url("https://www.sullissivik.gl/build/images/search-small.svg");
  width:21px;
  height:21px;
  position:absolute;
@@ -14143,7 +14143,7 @@ header+.full-page {
  display:block;
  height:65px
 }
-.languageSelect a:before {
+.languageSelect a::before {
  width:20px;
  position:absolute;
  left:50%;
@@ -14154,10 +14154,10 @@ header+.full-page {
  transform:translateX(-50%) translateY(-50%)
 }
 .languageSelect [data-lang="da-DK"]:before {
- background:url("/build/images/dk_flag-02.svg") no-repeat 0 0
+ background:url("https://www.sullissivik.gl/build/images/dk_flag-02.svg") no-repeat 0 0
 }
 .languageSelect [data-lang="kl-GL"]:before {
- background:url("/build/images/gl_flag-03.svg") no-repeat 0 0
+ background:url("https://www.sullissivik.gl/build/images/gl_flag-03.svg") no-repeat 0 0
 }
 @media only screen and (min-width: 64.063em) {
  .languageSelect {
@@ -14551,7 +14551,7 @@ footer {
  width:15px;
  height:15px;
  transform:translateY(-50%);
- background:url("/build/images/pil_ned.svg") no-repeat 50% 50%;
+ background:url("https://www.sullissivik.gl/build/images/pil_ned.svg") no-repeat 50% 50%;
  transition:transform 200ms ease
 }
 .active .search-subjects-list__trigger::after {
@@ -14724,7 +14724,7 @@ header {
  border:none;
  height:50px;
  padding-right:8px;
- background-image:url("/build/images/pil_ned_white.svg")
+ background-image:url("https://sullissivik.gl/build/images/pil_ned_white.svg")
 }
 .header__burger {
  position:absolute;
@@ -14748,13 +14748,12 @@ header {
  }
 }
 .header__section a {
- font-family:'KAN';
+ font-family:'KAN', serif;
  speak:none;
  font-style:normal;
  font-weight:normal;
  font-variant:normal;
  text-transform:none;
- line-height:1;
  -webkit-font-smoothing:antialiased;
  -moz-osx-font-smoothing:grayscale;
  padding:0 .9375rem;
