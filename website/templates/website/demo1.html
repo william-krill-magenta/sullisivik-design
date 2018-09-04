@@ -1,0 +1,208 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Demo 1: Simple form{% endblock %}
+
+{% block content %}
+    <div class="row">
+    <div class="small-12 columns margin-bottom">
+
+
+        <div class="form-section">
+            <h2>Personlige oplysninger</h2>
+
+
+            <div class="form-row row">
+
+                <div class="form-cell large-12 small-12 columns">
+
+
+                    <div class="richtextField">
+                        <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_0_rptCells_0_Section_8711f299ab744741b804879e98172b92_52397e731c364993a730edd43870a3d3_c1_RichText_0_richtextContent_0"><strong>Du kan kun melde flytning her, hvis du flytter internt i Grønland. Du kan ikke bruge denne, hvis du f.eks. flytter fra Danmark til en by/bygd i Grønland, da de danske og grønlandske systemer ikke taler sammen.</strong></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-row row">
+
+                <div class="form-cell large-6 small-12 columns">
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_1_rptCells_0_Section_8711f299ab744741b804879e98172b92_3751cf26255746e08916015cdd7fccf4_c1_Textbox_0_txtField_0" class="textboxField inline">
+
+                        <label for="contentholder_0_currentSectionControl_rptBlocks_rptRows_1_rptCells_0_Section_8711f299ab744741b804879e98172b92_3751cf26255746e08916015cdd7fccf4_c1_Textbox_0_txtField_0" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_1_rptCells_0_Section_8711f299ab744741b804879e98172b92_3751cf26255746e08916015cdd7fccf4_c1_Textbox_0_lblTextboxAbove_0" class="above">
+                            Flyttedato
+
+
+                        </label>
+                        <input placeholder="Skriv din flyttedato her" type="text">
+
+                    </div>
+
+                </div>
+
+                <!-- Maybe no need for this
+                <div class="form-cell large-6 small-12 columns">
+                    <span>&nbsp;</span>
+                </div>
+                -->
+            </div>
+
+
+
+            <div class="form-row row">
+
+                <div class="form-cell large-6 small-12 columns">
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_2_rptCells_0_Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c1_Textbox_0_txtField_0" class="textboxField block above">
+                        <label for="contentholder_0_currentSectionControl_rptBlocks_rptRows_2_rptCells_0_Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c1_Textbox_0_tbTextbox_0" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_2_rptCells_0_Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c1_Textbox_0_lblTextboxAbove_0" class="above">
+                            Flytter fra - Adresse
+                        </label>
+                        <div class="input-container">
+                            <input name="contentholder_0$currentSectionControl$rptBlocks$ctl02$rptRows$ctl00$rptCells$ctl00$Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c1_Textbox$tbTextbox" value=" " id="contentholder_0_currentSectionControl_rptBlocks_rptRows_2_rptCells_0_Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c1_Textbox_0_tbTextbox_0" class="val-text" style="width:;" type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-cell large-6 small-12 columns">
+
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_2_rptCells_0_Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c2_Municipality_1_dropdownField_1" class="val-drplist textboxField block val-drplist">
+                        <label id="contentholder_0_currentSectionControl_rptBlocks_rptRows_2_rptCells_0_Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c2_Municipality_1_lblDropdownList_1">Fra Kommune</label>
+                        <div class="input-container">
+                            <select id="Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c2_Municipality" style="width:" name="Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c2_Municipality" class=" textboxField block val-drplist "><option value="">Vælg kommune</option><option value="Avannaata Kommunia[{213D6665-8534-4F12-908C-D245B78E70F8}]">Avannaata Kommunia</option><option value="Kommune Qeqertalik[{3B178157-FA57-48DC-BDD6-DB3BB31B6735}]">Kommune Qeqertalik</option><option value="Qeqqata Kommunia[{39E05DFF-24E0-4427-939F-A915805C6DE1}]">Qeqqata Kommunia</option><option value="Kommuneqarfik Sermersooq[{72E988FC-E3E9-4C71-94DB-BD197F7D4B9E}]">Kommuneqarfik Sermersooq</option><option value="Kommune Kujalleq[{6E5F2D89-81E3-4FAC-A0EE-5599E14800E7}]">Kommune Kujalleq</option></select>
+                        </div>
+                        <label id="contentholder_0_currentSectionControl_rptBlocks_rptRows_2_rptCells_0_Section_8711f299ab744741b804879e98172b92_cebffb4fba9541e18389724cd7d835e7_c2_Municipality_1_lblDropdownListBelow_1"></label>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-row row">
+
+                <div class="form-cell large-6 small-12 columns">
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_3_rptCells_0_Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c1_Textbox_0_txtField_0" class="textboxField inline">
+                        <label for="contentholder_0_currentSectionControl_rptBlocks_rptRows_3_rptCells_0_Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c1_Textbox_0_tbTextbox_0" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_3_rptCells_0_Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c1_Textbox_0_lblTextboxAbove_0">Flytter til - Adresse</label>
+                        <div class="input-container">
+                            <input name="contentholder_0$currentSectionControl$rptBlocks$ctl03$rptRows$ctl00$rptCells$ctl00$Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c1_Textbox$tbTextbox" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_3_rptCells_0_Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c1_Textbox_0_tbTextbox_0" class="val-text" style="width:;" type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-cell large-6 small-12 columns">
+
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_3_rptCells_0_Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c2_Municipality_1_dropdownField_1" class="val-drplist textboxField block val-drplist">
+                        <label id="contentholder_0_currentSectionControl_rptBlocks_rptRows_3_rptCells_0_Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c2_Municipality_1_lblDropdownList_1">Til hvilken kommune</label>
+                        <div class="input-container">
+                            <select id="Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c2_Municipality" style="width:" name="Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c2_Municipality" class=" textboxField block val-drplist "><option value="">Vælg kommune</option><option value="Avannaata Kommunia[{213D6665-8534-4F12-908C-D245B78E70F8}]">Avannaata Kommunia</option><option value="Kommune Qeqertalik[{3B178157-FA57-48DC-BDD6-DB3BB31B6735}]">Kommune Qeqertalik</option><option value="Qeqqata Kommunia[{39E05DFF-24E0-4427-939F-A915805C6DE1}]">Qeqqata Kommunia</option><option value="Kommuneqarfik Sermersooq[{72E988FC-E3E9-4C71-94DB-BD197F7D4B9E}]">Kommuneqarfik Sermersooq</option><option value="Kommune Kujalleq[{6E5F2D89-81E3-4FAC-A0EE-5599E14800E7}]">Kommune Kujalleq</option></select>
+                        </div>
+                        <label id="contentholder_0_currentSectionControl_rptBlocks_rptRows_3_rptCells_0_Section_8711f299ab744741b804879e98172b92_b5679522c13c4a61aa81427ef2d1e347_c2_Municipality_1_lblDropdownListBelow_1"></label>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-row row">
+
+                <div class="form-cell large-6 small-12 columns">
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_4_rptCells_0_Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c1_Textbox_0_txtField_0" class="textboxField block above">
+                        <label for="contentholder_0_currentSectionControl_rptBlocks_rptRows_4_rptCells_0_Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c1_Textbox_0_tbTextbox_0" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_4_rptCells_0_Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c1_Textbox_0_lblTextboxAbove_0" class="above">Postnr.</label>
+                        <div class="input-container">
+                            <input name="contentholder_0$currentSectionControl$rptBlocks$ctl04$rptRows$ctl00$rptCells$ctl00$Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c1_Textbox$tbTextbox" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_4_rptCells_0_Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c1_Textbox_0_tbTextbox_0" class="val-text" style="width:;" type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-cell large-6 small-12 columns">
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_4_rptCells_0_Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c2_Textbox_1_txtField_1" class="textboxField block above">
+                        <label for="contentholder_0_currentSectionControl_rptBlocks_rptRows_4_rptCells_0_Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c2_Textbox_1_tbTextbox_1" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_4_rptCells_0_Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c2_Textbox_1_lblTextboxAbove_1" class="above">Postdistrikt</label>
+                        <div class="input-container">
+                            <input name="contentholder_0$currentSectionControl$rptBlocks$ctl04$rptRows$ctl00$rptCells$ctl01$Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c2_Textbox$tbTextbox" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_4_rptCells_0_Section_8711f299ab744741b804879e98172b92_94af4e024e3946e78dd2016bafbfeb94_c2_Textbox_1_tbTextbox_1" style="width:;" type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-row row">
+
+                <div class="form-cell large-6 small-12 columns">
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_5_rptCells_0_Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c1_Textbox_0_txtField_0" class="textboxField block above">
+                        <label for="contentholder_0_currentSectionControl_rptBlocks_rptRows_5_rptCells_0_Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c1_Textbox_0_tbTextbox_0" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_5_rptCells_0_Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c1_Textbox_0_lblTextboxAbove_0" class="above">Telefon</label>
+                        <div class="input-container">
+                            <input name="contentholder_0$currentSectionControl$rptBlocks$ctl05$rptRows$ctl00$rptCells$ctl00$Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c1_Textbox$tbTextbox" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_5_rptCells_0_Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c1_Textbox_0_tbTextbox_0" style="width:;" type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-cell large-6 small-12 columns">
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_5_rptCells_0_Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c2_Textbox_1_txtField_1" class="textboxField block above">
+                        <label for="contentholder_0_currentSectionControl_rptBlocks_rptRows_5_rptCells_0_Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c2_Textbox_1_tbTextbox_1" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_5_rptCells_0_Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c2_Textbox_1_lblTextboxAbove_1" class="above">Indtast din email.</label>
+                        <div class="input-container">
+                            <input name="contentholder_0$currentSectionControl$rptBlocks$ctl05$rptRows$ctl00$rptCells$ctl01$Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c2_Textbox$tbTextbox" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_5_rptCells_0_Section_8711f299ab744741b804879e98172b92_592d4156360c42198a3d39934748aea2_c2_Textbox_1_tbTextbox_1" class="val-email" style="width:;" type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="form-row row">
+
+                <div class="form-cell large-6 small-12 columns">
+
+                    <div id="contentholder_0_currentSectionControl_rptBlocks_rptRows_6_rptCells_0_Section_8711f299ab744741b804879e98172b92_9508c6006d5e48c19d5fdcb797af87aa_c1_Textbox_0_txtField_0" class="textboxField block above">
+                        <label for="contentholder_0_currentSectionControl_rptBlocks_rptRows_6_rptCells_0_Section_8711f299ab744741b804879e98172b92_9508c6006d5e48c19d5fdcb797af87aa_c1_Textbox_0_tbTextbox_0" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_6_rptCells_0_Section_8711f299ab744741b804879e98172b92_9508c6006d5e48c19d5fdcb797af87aa_c1_Textbox_0_lblTextboxAbove_0" class="above">Hos ( udfyldes kun hvis de er logerende) </label>
+                        <div class="input-container">
+                            <input name="contentholder_0$currentSectionControl$rptBlocks$ctl06$rptRows$ctl00$rptCells$ctl00$Section_8711f299ab744741b804879e98172b92_9508c6006d5e48c19d5fdcb797af87aa_c1_Textbox$tbTextbox" id="contentholder_0_currentSectionControl_rptBlocks_rptRows_6_rptCells_0_Section_8711f299ab744741b804879e98172b92_9508c6006d5e48c19d5fdcb797af87aa_c1_Textbox_0_tbTextbox_0" style="width:;" type="text">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="form-cell large-6 small-12 columns">
+                    <span>&nbsp;</span>
+                </div>
+
+            </div>
+
+
+        </div>
+        <input name="contentholder_0$btnNextSection" value="Next" id="contentholder_0_btnNextSection" class="button--highlight right" type="submit">
+
+        <input name="contentholder_0$btnSectionsCancel" value="Afslut og ryd alt indhold" id="contentholder_0_btnSectionsCancel" class="cancel button--highlight" type="submit">
+    </div>
+</div>
+{% endblock %}

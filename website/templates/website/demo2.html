@@ -1,0 +1,111 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Demo 2: Less simple form{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="large-12 columns">
+            <div class="panel--hero--white">
+                <div class="panel--hero__content">
+                    <h1>
+                        Dummy form
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <div class="small-12 medium-12 large-6 columns">
+            <div class="panel--nemid">
+                <form><!-- Hapset: https://foundation.zurb.com/sites/docs/v/5.5.3/components/forms.html -->
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>Input Label
+                                <input type="text" placeholder="large-12.columns" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-4 columns">
+                            <label>Input Label
+                                <input type="text" placeholder="large-4.columns" />
+                            </label>
+                        </div>
+                        <div class="large-4 columns">
+                            <label>Input Label
+                                <input type="text" placeholder="large-4.columns" />
+                            </label>
+                        </div>
+                        <div class="large-4 columns">
+                            <div class="row collapse">
+                                <label>Input Label</label>
+                                <div class="small-9 columns">
+                                    <input type="text" placeholder="small-9.columns" />
+                                </div>
+                                <div class="small-3 columns">
+                                    <span class="postfix">.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>Select Box
+                                <select>
+                                    <option value="husker">Husker</option>
+                                    <option value="starbuck">Starbuck</option>
+                                    <option value="hotdog">Hot Dog</option>
+                                    <option value="apollo">Apollo</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <label>Choose Your Favorite</label>
+                            <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+                            <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Blue</label>
+                        </div>
+                        <div class="large-6 columns">
+                            <label>Check these out</label>
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+                            <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label>Textarea Label
+                                <textarea placeholder="small-12.columns"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="small-12 medium-12 large-6 columns">
+            <div class="panel--white nemid__info">
+                <h2>
+                    Hvad er 'Min Side' og NemID?
+                </h2>
+
+                <p>
+                    'Min Side' er din helt personlige side, hvorpå selvbetjeningsmuligheder fra det offentlige er samlet under ét tag.<br><br>For at kunne benytte dig af selvbetjeningsmulighederne skal du logge ind med dit NemID. Uanset om du vil bruge din netbank eller betjene dig selv online på sullissivik.gl, logger du ind med dit NemID.
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="https://www.sullissivik.gl/emner/NemID" id="linkReadmore" shape="rect" target="_blank">Læs mere om NemID</a>
+                    </li>
+                    <li>
+                        <a href="https://www.sullissivik.gl/Emner/NemID/Kom%20godt%20igang/NemID_Log_paa" id="linkLoginInfo" shape="rect" target="_blank">Sådan logger du på</a></li>
+                    <li>
+                        <a href="https://www.sullissivik.gl/Emner/NemID/Bestilling/NemID_Bestil_en_midlertidig_adgangskode" id="linkListPasswordInfo" shape="rect" target="_blank">Glemt adgangskode</a>
+                    </li>
+                    <li>
+                        <a href="https://www.sullissivik.gl/Emner/NemID/Kom-godt-igang/NemID_Problemer_med_login" id="linkListLoginProblems" shape="rect" target="_blank">Jeg har problemer med at logge ind</a>
+                    </li>
+                </ul>
+            </div>
+            <br><br>
+        </div>
+    </div>
+{% endblock %}

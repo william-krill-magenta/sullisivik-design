@@ -1,0 +1,89 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block title %}Demo 3: Accordion{% endblock %}
+
+{% block content %}
+    <!-- panel--hero -->
+    <div class="row">
+        <div class="small-12 column">
+            <div class="panel--hero--white">
+                <div class="panel__breadcrumb">
+                    <span>panel__breadcrumb</span>
+                    <ul class="tags">
+                        <li class="tags__item">
+                            <a href="#">
+                                <span>tag__item 1</span>
+                            </a>
+                        </li>
+                        <li class="tags__item">
+                            <a href="#">
+                                <span>tag__item 2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="panel--hero__content">
+                    <h1>panel--hero__content</h1>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- panel -->
+    <div class="row">
+        <div class="small-12 medium-8 large-8 columns">
+            <dl class="accordion" data-accordion="">
+                <dd class="accordion__navigation">
+                    <a href="#" class="accordion__link">
+                        accordion__link
+                    </a>
+                    <div class="accordion__container">
+                        <div class="accordion__content">
+                            <div class="content__text">
+                                content__text
+                                <br>
+                                <br>
+                                <strong>strong</strong>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+                <dd class="accordion__navigation">
+                    <a href="#" class="accordion__link">
+                        accordion__link
+                    </a>
+                    <div class="accordion__container">
+                        <div class="accordion__content">
+                            <div class="content__text">
+                                content__text
+                                <br>
+                                <br>
+                                <strong>strong</strong>
+                            </div>
+                        </div>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <div class="small-12 medium-4 large-4 columns">
+            <div class="panel--white">
+                <div class="content__text">
+                    <strong>Strong: kommune</strong>
+                    <br>
+                    Postbox 1023
+                    <br>
+                    3952 Ilulissat
+                    <br>
+                    <br>
+                    Telefon: (+299) 70 18 00"
+                    <br>
+                    Fax: (+123) 45 67 89
+                    <br>
+                    Some email: <a href="mailto: john@test.com">john@test.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
